@@ -1,8 +1,11 @@
-class ModelCoffee {
-  final String title, image, aromaticProfile, aromaticNotes;
-  final int intensity, acidity, bitterness, body, roasting;
+import 'package:flutter/foundation.dart';
 
-  ModelCoffee(
+class ModelCoffee {
+  final String  title, image, aromaticProfile, aromaticNotes;
+  final int id, intensity, acidity, bitterness, body, roasting;
+
+  ModelCoffee({
+    @required this.id,
     this.title,
     this.image,
     this.aromaticProfile,
@@ -12,5 +15,5 @@ class ModelCoffee {
     this.bitterness,
     this.body,
     this.roasting,
-  );
+  });
 }
