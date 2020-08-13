@@ -65,7 +65,6 @@ class _HomeScreenState extends State<HomeScreen>
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               IconButton(
-                // icon: Icon(FontAwesomeIcons.thLarge),
                 icon: Icon(Icons.menu),
                 onPressed: () {},
               ),
@@ -74,10 +73,8 @@ class _HomeScreenState extends State<HomeScreen>
                   padding: EdgeInsets.all(0),
                   margin: EdgeInsets.all(0),
                   height: _heightTop,
-//                  alignment: Alignment.center,
-                  // width: MediaQuery.of(context).size.width * 0.70,
                   decoration: BoxDecoration(
-                    color: Colors.grey.withOpacity(0.1),
+                    color: Colors.grey.withOpacity(0.2),
                     borderRadius: BorderRadius.only(
                       bottomRight: Radius.circular(25.0),
                       bottomLeft: Radius.circular(25.0),
@@ -88,21 +85,17 @@ class _HomeScreenState extends State<HomeScreen>
                   child: TextField(
                     decoration: InputDecoration(
                       border: InputBorder.none,
-//                      contentPadding: EdgeInsets.only(top: 0.2),
                       prefixIcon: IconButton(
                         icon: Icon(CupertinoIcons.search),
-                          color: Colors.grey,
-                            iconSize: 19,
-                            onPressed: (){
-
-                            },
+                        color: Colors.black45,
+                        iconSize: 20,
+                        onPressed: () {},
                       ),
                     ),
                   ),
                 ),
               ),
               IconButton(
-                // icon: Icon(FontAwesomeIcons.thLarge),
                 icon: Icon(Icons.shopping_cart),
                 onPressed: () {
                   // Navigator.pushNamed(context, '$cartViewRoute');

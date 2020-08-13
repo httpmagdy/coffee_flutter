@@ -1,3 +1,5 @@
+import 'package:coffeeflutter/utils/main_theme.dart';
+
 import '../utils/custom_title.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -26,11 +28,7 @@ class CardCoffee extends StatelessWidget {
       height: ScreenUtil.screenHeight,
       margin: EdgeInsets.symmetric(horizontal: 10),
       padding: const EdgeInsets.all(15.0),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        border: Border.all(width: 1, color: Colors.grey.withOpacity(0.3)),
-        borderRadius: BorderRadius.circular(5),
-      ),
+      decoration: decorationBox,
       child: Column(
         children: <Widget>[
           contentcardImage(

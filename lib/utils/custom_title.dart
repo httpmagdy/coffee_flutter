@@ -24,8 +24,8 @@ class CustomTitle extends StatelessWidget {
       textAlign: textAlign ?? TextAlign.start,
       style: GoogleFonts.ubuntu(
         color: color ?? Colors.black,
-        fontWeight: fontWeight ,
-        fontSize: fontSize ?? ScreenUtil().setSp(22),
+        fontWeight: fontWeight ?? FontWeight.w600,
+        fontSize: fontSize ?? ScreenUtil().setSp(20),
       ),
     );
   }

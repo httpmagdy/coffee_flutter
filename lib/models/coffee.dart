@@ -1,7 +1,8 @@
 import 'package:flutter/foundation.dart';
 
 class ModelCoffee {
-  final String  title, image, aromaticProfile, aromaticNotes;
+  final String title, image, aromaticProfile, aromaticNotes, description;
+  final double price;
   final int id, intensity, acidity, bitterness, body, roasting;
 
   ModelCoffee({
@@ -10,6 +11,8 @@ class ModelCoffee {
     this.image,
     this.aromaticProfile,
     this.aromaticNotes,
+    this.description,
+    this.price,
     this.intensity,
     this.acidity,
     this.bitterness,

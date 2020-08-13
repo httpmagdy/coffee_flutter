@@ -1,16 +1,17 @@
-
 import 'package:coffeeflutter/utils/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-Widget contentcardImage({
-  @required int bitterness,
-  @required int body,
-  @required int acidity,
-  @required int roasting,
-  @required String imageUrl,
-  double w, double h, double top, double lineHeight
-}){
+Widget contentcardImage(
+    {@required int bitterness,
+    @required int body,
+    @required int acidity,
+    @required int roasting,
+    @required String imageUrl,
+    double w,
+    double h,
+    double top,
+    double lineHeight}) {
   return Container(
     height: h ?? 100.h,
     child: Stack(
@@ -19,19 +20,19 @@ Widget contentcardImage({
           left: 0,
           top: top ?? 23,
           child: rate(
-            CrossAxisAlignment.start,
-            tL('BITTERNESS', valRate(bitterness, 5)),
-            tL('BODY', valRate(body, 5)), lineHeight
-          ),
+              CrossAxisAlignment.start,
+              tL('BITTERNESS', valRate(bitterness, 5)),
+              tL('BODY', valRate(body, 5)),
+              lineHeight),
         ),
         Positioned(
           right: 0,
           top: top ?? 23,
           child: rate(
-            CrossAxisAlignment.end,
-            tR('ACIDITY', valRate(acidity, 5)),
-            tR('ROASTING', valRate(roasting, 5)), lineHeight
-          ),
+              CrossAxisAlignment.end,
+              tR('ACIDITY', valRate(acidity, 5)),
+              tR('ROASTING', valRate(roasting, 5)),
+              lineHeight),
         ),
         Positioned(
           left: 1,
@@ -43,8 +44,8 @@ Widget contentcardImage({
   );
 }
 
-Widget rate(
-    CrossAxisAlignment axisAlignment, Widget childTop, Widget childBottom, double lineHeight) {
+Widget rate(CrossAxisAlignment axisAlignment, Widget childTop,
+    Widget childBottom, double lineHeight) {
   return Column(
     crossAxisAlignment: axisAlignment,
     children: <Widget>[
@@ -114,7 +115,7 @@ List<Widget> valRate(int count, int last, [Widget pNum]) {
   return value;
 }
 
-Widget cardImage(String image , double w, double h) {
+Widget cardImage(String image, double w, double h) {
   return Container(
     width: w ?? 100.w,
     height: h ?? 100.h,
@@ -126,7 +127,8 @@ Widget drawIntensity(int intensity, {double sizeText}) {
   return Center(
     child: Row(
       children: <Widget>[
-        CustomText(text: 'INTENSITY', fontSize: sizeText ?? ScreenUtil().setSp(12)),
+        CustomText(
+            text: 'INTENSITY', fontSize: sizeText ?? ScreenUtil().setSp(12)),
         Expanded(child: Text('')),
         Row(
           children: valRate(
@@ -148,7 +150,9 @@ Widget aromaticNotes(String notes, {double sizeText}) {
   return Center(
     child: Row(
       children: <Widget>[
-        CustomText(text: 'AROMATIC NOTES', fontSize: sizeText ?? ScreenUtil().setSp(12)),
+        CustomText(
+            text: 'AROMATIC NOTES',
+            fontSize: sizeText ?? ScreenUtil().setSp(12)),
         Expanded(child: Text('')),
         CustomText(
             text: notes,
@@ -164,7 +168,8 @@ Widget aromaticProfile(String profile, {double sizeText}) {
     child: Row(
       children: <Widget>[
         CustomText(
-            text: 'AROMATIC PROFILE', fontSize: sizeText ?? ScreenUtil().setSp(12)),
+            text: 'AROMATIC PROFILE',
+            fontSize: sizeText ?? ScreenUtil().setSp(12)),
         Expanded(child: Text('')),
         CustomText(
             text: profile.toString(),

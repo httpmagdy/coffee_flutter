@@ -18,12 +18,7 @@ class PageOne extends StatelessWidget {
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(left: 10, bottom: 10, top: 20),
-            child: CustomTitle(
-              title: 'Best Sales :',
-              fontWeight: FontWeight.w600,
-              fontSize: 20,
-              textAlign: TextAlign.start,
-            ),
+            child: CustomTitle(title: 'Best Sales'),
           ),
           Container(
             height: 260.h,
@@ -46,25 +41,14 @@ class PageOne extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 20.h),
           Padding(
-            padding: const EdgeInsets.only(left: 10, bottom: 10, top: 10),
-            child: CustomTitle(
-              title: 'Master Origin :',
-              fontWeight: FontWeight.w600,
-              fontSize: 20,
-              textAlign: TextAlign.start,
-            ),
+            padding: const EdgeInsets.only(left: 10, bottom: 10, top: 30),
+            child: CustomTitle(title: 'Master Origin'),
           ),
           _contBox(products.data2, context),
           Padding(
             padding: const EdgeInsets.only(left: 10, bottom: 10, top: 10),
-            child: CustomTitle(
-              title: 'Italana :',
-              fontWeight: FontWeight.w600,
-              fontSize: 20,
-              textAlign: TextAlign.start,
-            ),
+            child: CustomTitle(title: 'Italana'),
           ),
           _contBox(products.data, context),
         ],
@@ -124,15 +108,14 @@ class PageOne extends StatelessWidget {
                 ),
                 title: CustomTitle(
                   title: coffee.title.toString(),
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
+                  fontSize: ScreenUtil().setSp(16),
                 ),
                 subtitle: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     CustomText(
                       text: coffee.aromaticProfile.toString(),
-                      fontSize: 14,
+                      fontSize: ScreenUtil().setSp(14),
                     ),
                     SizedBox(height: 7),
                     Row(
@@ -141,7 +124,7 @@ class PageOne extends StatelessWidget {
                           13,
                           CustomText(
                             text: coffee.intensity.toString(),
-                            fontSize: 9,
+                            fontSize: ScreenUtil().setSp(9),
                             color: Colors.red,
                           )),
                     ),
@@ -157,7 +140,7 @@ class PageOne extends StatelessWidget {
                     SizedBox(height: 10),
                     CustomText(
                       text: '\$130.00',
-                      fontSize: 10,
+                      fontSize: ScreenUtil().setSp(10),
                       color: Colors.red,
                     ),
                   ],
