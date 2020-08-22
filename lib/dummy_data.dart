@@ -3,9 +3,9 @@ import 'models/coffee.dart';
 final Map<String, List<ModelCoffee>> productsData = {
   'ispiresoNapoliCoffee': [
     ModelCoffee(
-        id: 01,
+        id: '01',
         title: 'Ispireso Napoli',
-        image: 'https://i.ibb.co/5h4Hsh2/napoli-xx.png',
+        image: './assets/images/06.png',
         aromaticProfile: 'Exceptionally dark & creamy',
         aromaticNotes: 'Intense',
         intensity: 13,
@@ -17,9 +17,9 @@ final Map<String, List<ModelCoffee>> productsData = {
         description:
             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
     ModelCoffee(
-        id: 02,
+        id: '02',
         title: 'Ispirazione Palermo Kazaar',
-        image: 'https://i.ibb.co/PTwXLFk/kazaar-hd-1-1.png',
+        image: './assets/images/07.png',
         aromaticProfile: 'Exceptionally Intense & Syrupy',
         aromaticNotes: 'Intense',
         intensity: 13,
@@ -31,9 +31,9 @@ final Map<String, List<ModelCoffee>> productsData = {
         description:
             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
     ModelCoffee(
-        id: 03,
+        id: '03',
         title: 'Ispirazione Ristretto Italiano',
-        image: 'https://i.ibb.co/whr34B1/ristretto-hd-3.png',
+        image: './assets/images/08.png',
         aromaticProfile: 'Powerful & Contrasting',
         aromaticNotes: 'Intense',
         intensity: 13,
@@ -45,9 +45,9 @@ final Map<String, List<ModelCoffee>> productsData = {
         description:
             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
     ModelCoffee(
-        id: 04,
+        id: '04',
         title: 'Ispirazione Ristretto Decaffeinato',
-        image: 'https://i.ibb.co/crG5Zx5/nespresso-2-1-1.png',
+        image: './assets/images/09.png',
         aromaticProfile: 'Powerful & Contrasting',
         aromaticNotes: 'Intense',
         intensity: 13,
@@ -59,9 +59,9 @@ final Map<String, List<ModelCoffee>> productsData = {
         description:
             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
     ModelCoffee(
-        id: 05,
+        id: '05',
         title: 'Ispirazione Firenze Arpeggio',
-        image: 'https://i.ibb.co/9ZqbcBv/arpeggio-hd-3.png',
+        image: './assets/images/10.png',
         aromaticProfile: 'Intense & Creamy',
         aromaticNotes: 'Intense',
         intensity: 9,
@@ -73,10 +73,9 @@ final Map<String, List<ModelCoffee>> productsData = {
         description:
             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
     ModelCoffee(
-        id: 06,
+        id: '06',
         title: 'Ispirazione Firenze Arpeggio Decaffeinato',
-        image:
-            'https://i.ibb.co/pn2qRG8/arpeggio-decaffeinato-hd-new-look-1-1.png',
+        image: './assets/images/11.png',
         aromaticProfile: 'Intense & Creamy',
         aromaticNotes: 'Intense',
         intensity: 9,
@@ -88,9 +87,9 @@ final Map<String, List<ModelCoffee>> productsData = {
         description:
             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
     ModelCoffee(
-        id: 07,
+        id: '07',
         title: 'Ispirazione Venezia',
-        image: 'https://i.ibb.co/BrCvtfD/venezia-xx.png',
+        image: './assets/images/12.png',
         aromaticProfile: 'Exceptionally dark & creamy',
         aromaticNotes: 'Harmoniously balanced & thick body',
         intensity: 9,
@@ -102,9 +101,9 @@ final Map<String, List<ModelCoffee>> productsData = {
         description:
             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
     ModelCoffee(
-        id: 08,
+        id: '08',
         title: 'Ispirazione Roma',
-        image: 'https://i.ibb.co/yyBbdz1/roma-hd-2.png',
+        image: './assets/images/13.png',
         aromaticProfile: 'Exceptionally dark & creamy',
         aromaticNotes: 'Intense',
         intensity: 8,
@@ -116,9 +115,9 @@ final Map<String, List<ModelCoffee>> productsData = {
         description:
             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
     ModelCoffee(
-        id: 09,
+        id: '09',
         title: 'Ispirazione Genova Livanto',
-        image: 'https://i.ibb.co/gWtQzQp/livanto-hd-1.png',
+        image: './assets/images/14.png',
         aromaticProfile: 'Exceptionally dark & creamy',
         aromaticNotes: 'Round & Intense',
         intensity: 6,
@@ -132,9 +131,9 @@ final Map<String, List<ModelCoffee>> productsData = {
   ],
   'masterOriginCoffee': [
     ModelCoffee(
-        id: 10,
+        id: '10',
         title: 'India',
-        image: 'https://i.ibb.co/mzLTW6B/7712-3.png',
+        image: './assets/images/01.png',
         aromaticProfile: 'Intense And Spicy',
         aromaticNotes: 'Balanced',
         intensity: 11,
@@ -146,9 +145,9 @@ final Map<String, List<ModelCoffee>> productsData = {
         description:
             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
     ModelCoffee(
-        id: 11,
+        id: '11',
         title: 'Indonesia',
-        image: 'https://i.ibb.co/ZJZsKqw/7711-3.png',
+        image: './assets/images/02.png',
         aromaticProfile: 'Rich And Woody',
         aromaticNotes: 'Balanced',
         intensity: 8,
@@ -160,9 +159,9 @@ final Map<String, List<ModelCoffee>> productsData = {
         description:
             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
     ModelCoffee(
-        id: 12,
+        id: '12',
         title: 'Colombia',
-        image: 'https://i.ibb.co/1nkBRfS/7715-3.png',
+        image: './assets/images/03.png',
         aromaticProfile: 'Fruity And Vibrant',
         aromaticNotes: 'Balanced',
         intensity: 6,
@@ -174,9 +173,9 @@ final Map<String, List<ModelCoffee>> productsData = {
         description:
             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
     ModelCoffee(
-        id: 13,
+        id: '13',
         title: 'Nicaragua',
-        image: 'https://i.ibb.co/R748nn8/7713-3.png',
+        image: './assets/images/04.png',
         aromaticProfile: 'Sweet And Harmonious',
         aromaticNotes: 'Balanced',
         intensity: 5,
@@ -188,9 +187,9 @@ final Map<String, List<ModelCoffee>> productsData = {
         description:
             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
     ModelCoffee(
-        id: 14,
+        id: '14',
         title: 'Ethiopia',
-        image: 'https://i.ibb.co/F0Fc4NC/7714-3.png',
+        image: './assets/images/05.png',
         aromaticProfile: 'Flowery And Bright',
         aromaticNotes: 'Balanced',
         intensity: 4,
@@ -203,3 +202,207 @@ final Map<String, List<ModelCoffee>> productsData = {
             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
   ],
 };
+
+// final Map<String, List<ModelCoffee>> productsData = {
+//   'ispiresoNapoliCoffee': [
+//     ModelCoffee(
+//         id: '01',
+//         title: 'Ispireso Napoli',
+//         image: 'https://i.ibb.co/5h4Hsh2/napoli-xx.png',
+//         aromaticProfile: 'Exceptionally dark & creamy',
+//         aromaticNotes: 'Intense',
+//         intensity: 13,
+//         acidity: 5,
+//         bitterness: 1,
+//         body: 4,
+//         roasting: 3,
+//         price: 156.00,
+//         description:
+//             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
+//     ModelCoffee(
+//         id: '02',
+//         title: 'Ispirazione Palermo Kazaar',
+//         image: 'https://i.ibb.co/PTwXLFk/kazaar-hd-1-1.png',
+//         aromaticProfile: 'Exceptionally Intense & Syrupy',
+//         aromaticNotes: 'Intense',
+//         intensity: 13,
+//         acidity: 5,
+//         bitterness: 1,
+//         body: 4,
+//         roasting: 3,
+//         price: 156.00,
+//         description:
+//             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
+//     ModelCoffee(
+//         id: '03',
+//         title: 'Ispirazione Ristretto Italiano',
+//         image: 'https://i.ibb.co/whr34B1/ristretto-hd-3.png',
+//         aromaticProfile: 'Powerful & Contrasting',
+//         aromaticNotes: 'Intense',
+//         intensity: 13,
+//         acidity: 5,
+//         bitterness: 1,
+//         body: 4,
+//         roasting: 3,
+//         price: 156.00,
+//         description:
+//             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
+//     ModelCoffee(
+//         id: '04',
+//         title: 'Ispirazione Ristretto Decaffeinato',
+//         image: 'https://i.ibb.co/crG5Zx5/nespresso-2-1-1.png',
+//         aromaticProfile: 'Powerful & Contrasting',
+//         aromaticNotes: 'Intense',
+//         intensity: 13,
+//         acidity: 5,
+//         bitterness: 1,
+//         body: 4,
+//         roasting: 3,
+//         price: 156.00,
+//         description:
+//             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
+//     ModelCoffee(
+//         id: '05',
+//         title: 'Ispirazione Firenze Arpeggio',
+//         image: 'https://i.ibb.co/9ZqbcBv/arpeggio-hd-3.png',
+//         aromaticProfile: 'Intense & Creamy',
+//         aromaticNotes: 'Intense',
+//         intensity: 9,
+//         acidity: 5,
+//         bitterness: 1,
+//         body: 4,
+//         roasting: 3,
+//         price: 156.00,
+//         description:
+//             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
+//     ModelCoffee(
+//         id: '06',
+//         title: 'Ispirazione Firenze Arpeggio Decaffeinato',
+//         image:
+//             'https://i.ibb.co/pn2qRG8/arpeggio-decaffeinato-hd-new-look-1-1.png',
+//         aromaticProfile: 'Intense & Creamy',
+//         aromaticNotes: 'Intense',
+//         intensity: 9,
+//         acidity: 5,
+//         bitterness: 1,
+//         body: 4,
+//         roasting: 3,
+//         price: 156.00,
+//         description:
+//             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
+//     ModelCoffee(
+//         id: '07',
+//         title: 'Ispirazione Venezia',
+//         image: 'https://i.ibb.co/BrCvtfD/venezia-xx.png',
+//         aromaticProfile: 'Exceptionally dark & creamy',
+//         aromaticNotes: 'Harmoniously balanced & thick body',
+//         intensity: 9,
+//         acidity: 5,
+//         bitterness: 1,
+//         body: 4,
+//         roasting: 3,
+//         price: 156.00,
+//         description:
+//             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
+//     ModelCoffee(
+//         id: '08',
+//         title: 'Ispirazione Roma',
+//         image: 'https://i.ibb.co/yyBbdz1/roma-hd-2.png',
+//         aromaticProfile: 'Exceptionally dark & creamy',
+//         aromaticNotes: 'Intense',
+//         intensity: 8,
+//         acidity: 5,
+//         bitterness: 1,
+//         body: 4,
+//         roasting: 3,
+//         price: 156.00,
+//         description:
+//             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
+//     ModelCoffee(
+//         id: '09',
+//         title: 'Ispirazione Genova Livanto',
+//         image: 'https://i.ibb.co/gWtQzQp/livanto-hd-1.png',
+//         aromaticProfile: 'Exceptionally dark & creamy',
+//         aromaticNotes: 'Round & Intense',
+//         intensity: 6,
+//         acidity: 5,
+//         bitterness: 1,
+//         body: 4,
+//         roasting: 3,
+//         price: 156.00,
+//         description:
+//             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
+//   ],
+//   'masterOriginCoffee': [
+//     ModelCoffee(
+//         id: '10',
+//         title: 'India',
+//         image: 'https://i.ibb.co/mzLTW6B/7712-3.png',
+//         aromaticProfile: 'Intense And Spicy',
+//         aromaticNotes: 'Balanced',
+//         intensity: 11,
+//         acidity: 5,
+//         bitterness: 1,
+//         body: 4,
+//         roasting: 3,
+//         price: 156.00,
+//         description:
+//             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
+//     ModelCoffee(
+//         id: '11',
+//         title: 'Indonesia',
+//         image: 'https://i.ibb.co/ZJZsKqw/7711-3.png',
+//         aromaticProfile: 'Rich And Woody',
+//         aromaticNotes: 'Balanced',
+//         intensity: 8,
+//         acidity: 5,
+//         bitterness: 1,
+//         body: 4,
+//         roasting: 3,
+//         price: 156.00,
+//         description:
+//             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
+//     ModelCoffee(
+//         id: '12',
+//         title: 'Colombia',
+//         image: 'https://i.ibb.co/1nkBRfS/7715-3.png',
+//         aromaticProfile: 'Fruity And Vibrant',
+//         aromaticNotes: 'Balanced',
+//         intensity: 6,
+//         acidity: 5,
+//         bitterness: 1,
+//         body: 4,
+//         roasting: 3,
+//         price: 156.00,
+//         description:
+//             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
+//     ModelCoffee(
+//         id: '13',
+//         title: 'Nicaragua',
+//         image: 'https://i.ibb.co/R748nn8/7713-3.png',
+//         aromaticProfile: 'Sweet And Harmonious',
+//         aromaticNotes: 'Balanced',
+//         intensity: 5,
+//         acidity: 5,
+//         bitterness: 1,
+//         body: 4,
+//         roasting: 3,
+//         price: 156.00,
+//         description:
+//             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
+//     ModelCoffee(
+//         id: '14',
+//         title: 'Ethiopia',
+//         image: 'https://i.ibb.co/F0Fc4NC/7714-3.png',
+//         aromaticProfile: 'Flowery And Bright',
+//         aromaticNotes: 'Balanced',
+//         intensity: 4,
+//         acidity: 5,
+//         bitterness: 1,
+//         body: 4,
+//         roasting: 3,
+//         price: 156.00,
+//         description:
+//             'Inspired by the ambassador of all Italian coffees, we chose not to imitate but to roast our own version. The ristretto is the essence of Italy’s iconic coffee culture. It’s not reflective of any one city – it’s Italy. It’s the fashion, the art, the cuisine – it’s the consistent elegance and excellence of Italy as a whole. Inspired by this ambassador of all Italian coffees, we chose not to imitate but to roast our own version. Ispirazione Ristretto Italiano is a blend of diverse Arabica and Robustas – a contrasting bouquet from around the world – together they recreate the iconic Italian taste. Ispirazione Ristretto Italiano is a medium-dark roast. In one short, sharp sip, this blend reveals all its intensity and complexity of aromas. It’s a roasty and intense coffee accented by fruity notes and a hint of acidity dancing through. It’s a profile worthy of an ambassador – a coffee that explains Italians’ passion for coffee and makes sense of why it’s ingrained in daily life.'),
+//   ],
+// };

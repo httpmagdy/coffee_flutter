@@ -2,16 +2,17 @@ import 'package:coffeeflutter/utils/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-Widget contentcardImage(
-    {@required int bitterness,
-    @required int body,
-    @required int acidity,
-    @required int roasting,
-    @required String imageUrl,
-    double w,
-    double h,
-    double top,
-    double lineHeight}) {
+Widget contentcardImage({
+  @required int bitterness,
+  @required int body,
+  @required int acidity,
+  @required int roasting,
+  @required String imageUrl,
+  double w,
+  double h,
+  double top,
+  double lineHeight,
+}) {
   return Container(
     height: h ?? 100.h,
     child: Stack(
@@ -119,7 +120,7 @@ Widget cardImage(String image, double w, double h) {
   return Container(
     width: w ?? 100.w,
     height: h ?? 100.h,
-    child: Image.network(image),
+    child: Image.asset(image),
   );
 }
 

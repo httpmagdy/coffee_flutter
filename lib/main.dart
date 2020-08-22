@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import 'package:flutter/material.dart';
 import '_routing/router.dart';
+import 'providers/carts_prov.dart';
 import 'providers/products_prov.dart';
 
 void main() {
@@ -16,6 +17,9 @@ class Coffee extends StatelessWidget {
       providers: [
         ChangeNotifierProvider.value(
           value: ProductsProv(),
+        ),
+        ChangeNotifierProvider.value(
+          value: CartProv(),
         ),
       ],
       child: MaterialApp(

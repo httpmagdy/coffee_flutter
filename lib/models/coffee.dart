@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
 
-class ModelCoffee {
-  final String title, image, aromaticProfile, aromaticNotes, description;
+class ModelCoffee with ChangeNotifier {
+  final String id, title, image, aromaticProfile, aromaticNotes, description;
   final double price;
-  final int id, intensity, acidity, bitterness, body, roasting;
+  final int intensity, acidity, bitterness, body, roasting;
 
   ModelCoffee({
     @required this.id,

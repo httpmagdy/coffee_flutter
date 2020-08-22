@@ -1,6 +1,10 @@
+import 'package:coffeeflutter/_routing/routes.dart';
+import 'package:coffeeflutter/providers/carts_prov.dart';
+import 'package:coffeeflutter/widgets/badge.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../utils/custom_text.dart';
 import './home_pages/page_one.dart';
 
@@ -95,11 +99,19 @@ class _HomeScreenState extends State<HomeScreen>
                   ),
                 ),
               ),
-              IconButton(
-                icon: Icon(Icons.shopping_cart),
-                onPressed: () {
-                  // Navigator.pushNamed(context, '$cartViewRoute');
-                },
+              Consumer<CartProv>(
+                builder: (context, _cart, ch) => Badge(
+                  child: ch,
+                  value: _cart.itemCount.toString(),
+                ),
+                child: IconButton(
+                  icon: Icon(
+                    Icons.shopping_cart,
+                  ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '$cartScreenRoute');
+                  },
+                ),
               ),
             ],
           ),

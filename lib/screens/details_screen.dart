@@ -1,6 +1,7 @@
 import 'package:coffeeflutter/_routing/routes.dart';
 import 'package:coffeeflutter/models/coffee.dart';
-import 'package:coffeeflutter/providers/cart_prov.dart';
+import 'package:coffeeflutter/providers/carts_prov.dart';
+import 'package:coffeeflutter/providers/products_prov.dart';
 import 'package:coffeeflutter/utils/custom_text.dart';
 import 'package:coffeeflutter/utils/custom_title.dart';
 import 'package:coffeeflutter/utils/main_theme.dart';
@@ -11,20 +12,32 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 
-import 'cart_screen.dart';
-
 class DetailsScreen extends StatelessWidget {
   final ModelCoffee product;
   const DetailsScreen({Key key, this.product}) : super(key: key);
 
+  // static int _quantity = 0;
+
   @override
   Widget build(BuildContext context) {
-    // final cart = Provider.of<CartProv>(context);
+    // dynamic _prodId = ModalRoute.of(context).settings.arguments;
+    // print(_prodId.id);
+    // final product = Provider.of<ProductsProv>(context).findByID(
+    //   prodId,
+    // );
+
+    // final prod = Provider.of<ProductsProv>(context).items;
+    // print('$prod');
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xFF2A2A2A),
         actions: [
-          Badge(
+          Consumer<CartProv>(
+            builder: (context, _cart, ch) => Badge(
+              child: ch,
+              value: _cart.itemCount.toString(),
+            ),
             child: IconButton(
               icon: Icon(
                 Icons.shopping_cart,
@@ -33,23 +46,7 @@ class DetailsScreen extends StatelessWidget {
                 Navigator.pushNamed(context, '$cartScreenRoute');
               },
             ),
-            value: '3',
-          )
-
-          // Consumer<CartProv>(
-          //   builder: (_, cart, ch) => Badge(
-          //     child: ch,
-          //     value: '3',
-          //   ),
-          //   child: IconButton(
-          //     icon: Icon(
-          //       Icons.shopping_cart,
-          //     ),
-          //     onPressed: () {
-          //       Navigator.pushNamed(context, '$cartScreenRoute');
-          //     },
-          //   ),
-          // ),
+          ),
         ],
       ),
       body: ListView(
@@ -59,23 +56,23 @@ class DetailsScreen extends StatelessWidget {
             padding: const EdgeInsets.only(left: 3, bottom: 10, top: 5),
             child: CustomTitle(title: product.title),
           ),
-          _headerScreen(),
+          _headerScreen(product),
           Padding(
             padding: const EdgeInsets.only(left: 3, bottom: 10, top: 20),
             child: CustomTitle(title: 'Price & Cuantity'),
           ),
-          _priceAndQuantity(),
+          _priceAndQuantity(context),
           Padding(
             padding: const EdgeInsets.only(left: 3, bottom: 10, top: 20),
             child: CustomTitle(title: 'Description'),
           ),
-          _description(),
+          _description(product),
         ],
       ),
     );
   }
 
-  Container _headerScreen() {
+  Container _headerScreen(product) {
     return Container(
       decoration: decorationBox,
       padding: EdgeInsets.all(15),
@@ -110,7 +107,7 @@ class DetailsScreen extends StatelessWidget {
     );
   }
 
-  Container _priceAndQuantity() {
+  Widget _priceAndQuantity(BuildContext context) {
     return Container(
       decoration: decorationBox,
       padding: EdgeInsets.all(15),
@@ -125,52 +122,28 @@ class DetailsScreen extends StatelessWidget {
             ),
           ),
           Spacer(),
-          MaterialButton(
-            minWidth: 34,
-            height: 34,
-            padding: EdgeInsets.all(0),
-            color: Colors.black,
-            child: Icon(
-              CupertinoIcons.minus_circled,
-              color: Colors.white,
-              size: 23,
+          Consumer<CartProv>(
+            builder: (context, _cart, child) => MaterialButton(
+              padding: EdgeInsets.all(0),
+              height: 34,
+              child: _cart.items.containsKey(product.id)
+                  ? CustomText(text: 'Into Cart', color: Colors.red)
+                  : CustomText(text: 'Add To Cart', color: Colors.black),
+              color: Colors.amber,
+              onPressed: _cart.items.containsKey(product.id)
+                  ? null
+                  : () {
+                      _cart.addItem(product.id, product.title, product.price,
+                          product.image);
+                    },
             ),
-            onPressed: () {},
-          ),
-          Container(
-            padding: EdgeInsets.all(6),
-            decoration: decorationBox,
-            child: CustomText(
-                text: '1',
-                textAlign: TextAlign.center,
-                fontSize: ScreenUtil().setSp(18)),
-          ),
-          MaterialButton(
-            minWidth: 34,
-            height: 34,
-            padding: EdgeInsets.all(0),
-            color: Colors.black,
-            child: Icon(
-              CupertinoIcons.plus_circled,
-              color: Colors.white,
-              size: ScreenUtil().setSp(23),
-            ),
-            onPressed: () {},
-          ),
-          SizedBox(width: 10),
-          MaterialButton(
-            padding: EdgeInsets.all(0),
-            height: 34,
-            child: CustomText(text: 'Order Now', color: Colors.black),
-            color: Colors.amber,
-            onPressed: () {},
           )
         ],
       ),
     );
   }
 
-  Container _description() {
+  Container _description(product) {
     return Container(
       padding: EdgeInsets.all(15),
       decoration: decorationBox,

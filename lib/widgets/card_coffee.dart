@@ -1,4 +1,7 @@
+import 'package:coffeeflutter/_routing/routes.dart';
+import 'package:coffeeflutter/models/coffee.dart';
 import 'package:coffeeflutter/utils/main_theme.dart';
+import 'package:provider/provider.dart';
 
 import '../utils/custom_title.dart';
 import 'package:flutter/material.dart';
@@ -6,60 +9,52 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../widgets/widgets_build_card_coffee.dart';
 
 class CardCoffee extends StatelessWidget {
-  final String title, image, profile, notes;
-  final int intensity, acidity, bitterness, body, roasting;
-
-  CardCoffee({
-    @required this.title,
-    @required this.image,
-    @required this.profile,
-    @required this.notes,
-    @required this.intensity,
-    @required this.acidity,
-    @required this.bitterness,
-    @required this.body,
-    @required this.roasting,
-  });
-
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: ScreenUtil.screenWidth,
-      height: ScreenUtil.screenHeight,
-      margin: EdgeInsets.symmetric(horizontal: 10),
-      padding: const EdgeInsets.all(15.0),
-      decoration: decorationBox,
-      child: Column(
-        children: <Widget>[
-          contentcardImage(
-            acidity: acidity,
-            bitterness: bitterness,
-            body: body,
-            imageUrl: image,
-            roasting: roasting,
-          ),
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.only(top: 10),
-              child: CustomTitle(
-                title: title,
-                fontWeight: FontWeight.bold,
+    final modelCoffee = Provider.of<ModelCoffee>(context, listen: false);
+    return GestureDetector(
+      onTap: () {
+        Navigator.pushNamed(context, '$detailsScreenRoute',
+            arguments: modelCoffee);
+      },
+      child: Container(
+        width: ScreenUtil.screenWidth,
+        height: ScreenUtil.screenHeight,
+        margin: EdgeInsets.symmetric(horizontal: 10),
+        padding: const EdgeInsets.all(15.0),
+        decoration: decorationBox,
+        child: Column(
+          children: <Widget>[
+            contentcardImage(
+              acidity: modelCoffee.acidity,
+              bitterness: modelCoffee.bitterness,
+              body: modelCoffee.body,
+              imageUrl: modelCoffee.image,
+              roasting: modelCoffee.roasting,
+            ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.only(top: 10),
+                child: CustomTitle(
+                  title: modelCoffee.title,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
-          ),
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: Column(
-              children: <Widget>[
-                drawIntensity(intensity),
-                SizedBox(height: 7.h),
-                aromaticNotes(notes),
-                SizedBox(height: 7.h),
-                aromaticProfile(profile),
-              ],
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: Column(
+                children: <Widget>[
+                  drawIntensity(modelCoffee.intensity),
+                  SizedBox(height: 7.h),
+                  aromaticNotes(modelCoffee.aromaticNotes),
+                  SizedBox(height: 7.h),
+                  aromaticProfile(modelCoffee.aromaticProfile),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

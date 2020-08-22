@@ -8,10 +8,12 @@ Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case homeScreenRoute:
       return MaterialPageRoute(builder: (context) => HomeScreen());
+      break;
     case detailsScreenRoute:
       return MaterialPageRoute(
         builder: (context) => DetailsScreen(product: settings.arguments),
       );
+      break;
     case cartScreenRoute:
       return MaterialPageRoute(builder: (context) => CartScreen());
       break;
