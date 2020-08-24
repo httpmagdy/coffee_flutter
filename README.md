@@ -10,4 +10,4 @@ A new Flutter application.
 
 ![GitHub Logo](/screenshots/003.png)
 
-![GitHub Logo](/screenshots/004.ng)
+![GitHub Logo](/screenshots/004.png)
