@@ -1,7 +1,6 @@
 import 'package:coffeeflutter/_routing/routes.dart';
 import 'package:coffeeflutter/models/coffee.dart';
 import 'package:coffeeflutter/providers/carts_prov.dart';
-import 'package:coffeeflutter/providers/products_prov.dart';
 import 'package:coffeeflutter/utils/custom_text.dart';
 import 'package:coffeeflutter/utils/custom_title.dart';
 import 'package:coffeeflutter/utils/main_theme.dart';
@@ -16,19 +15,8 @@ class DetailsScreen extends StatelessWidget {
   final ModelCoffee product;
   const DetailsScreen({Key key, this.product}) : super(key: key);
 
-  // static int _quantity = 0;
-
   @override
   Widget build(BuildContext context) {
-    // dynamic _prodId = ModalRoute.of(context).settings.arguments;
-    // print(_prodId.id);
-    // final product = Provider.of<ProductsProv>(context).findByID(
-    //   prodId,
-    // );
-
-    // final prod = Provider.of<ProductsProv>(context).items;
-    // print('$prod');
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xFF2A2A2A),
@@ -59,7 +47,7 @@ class DetailsScreen extends StatelessWidget {
           _headerScreen(product),
           Padding(
             padding: const EdgeInsets.only(left: 3, bottom: 10, top: 20),
-            child: CustomTitle(title: 'Price & Cuantity'),
+            child: CustomTitle(title: 'Price'),
           ),
           _priceAndQuantity(context),
           Padding(
@@ -84,8 +72,8 @@ class DetailsScreen extends StatelessWidget {
             body: product.body,
             imageUrl: product.image,
             roasting: product.roasting,
-            h: 150.w,
-            w: 150.w,
+            h: 140.w,
+            w: 140.w,
             top: 30,
             lineHeight: 29.h,
           ),
@@ -118,18 +106,17 @@ class DetailsScreen extends StatelessWidget {
               padding: EdgeInsets.all(6),
               decoration: decorationBox,
               child: CustomText(
-                  text: '199.0 \$', fontSize: ScreenUtil().setSp(19)),
+                  text: '\$ ${product.price}',
+                  fontSize: ScreenUtil().setSp(19)),
             ),
           ),
           Spacer(),
           Consumer<CartProv>(
-            builder: (context, _cart, child) => MaterialButton(
-              padding: EdgeInsets.all(0),
-              height: 34,
+            builder: (context, _cart, child) => FlatButton(
+              color: Colors.redAccent,
               child: _cart.items.containsKey(product.id)
                   ? CustomText(text: 'Into Cart', color: Colors.red)
-                  : CustomText(text: 'Add To Cart', color: Colors.black),
-              color: Colors.amber,
+                  : CustomText(text: 'Add To Cart', color: Colors.white),
               onPressed: _cart.items.containsKey(product.id)
                   ? null
                   : () {

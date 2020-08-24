@@ -22,13 +22,13 @@ class PageOne extends StatelessWidget {
             child: CustomTitle(title: 'Best Sales'),
           ),
           Container(
-            height: 260.h,
+            height: 275.h,
             child: PageView.builder(
               scrollDirection: Axis.horizontal,
-              itemCount: products.getData('ispiresoNapoliCoffee').length,
+              itemCount: products.getData('bestSeals').length,
               itemBuilder: (BuildContext context, i) =>
                   ChangeNotifierProvider.value(
-                value: products.getData('ispiresoNapoliCoffee')[i],
+                value: products.getData('bestSeals')[i],
                 child: CardCoffee(),
               ),
             ),
@@ -99,7 +99,8 @@ class PageOne extends StatelessWidget {
                   children: <Widget>[
                     CustomText(
                       text: coffee.aromaticProfile.toString(),
-                      fontSize: ScreenUtil().setSp(14),
+                      fontSize: ScreenUtil().setSp(13),
+                      color: Colors.grey.shade700,
                     ),
                     SizedBox(height: 7),
                     Row(

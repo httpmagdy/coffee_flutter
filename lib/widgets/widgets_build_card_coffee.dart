@@ -1,4 +1,5 @@
 import 'package:coffeeflutter/utils/custom_text.dart';
+import 'package:coffeeflutter/utils/custom_title.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -19,20 +20,20 @@ Widget contentcardImage({
       children: <Widget>[
         Positioned(
           left: 0,
-          top: top ?? 23,
+          top: top ?? 18,
           child: rate(
               CrossAxisAlignment.start,
-              tL('BITTERNESS', valRate(bitterness, 5)),
-              tL('BODY', valRate(body, 5)),
+              tL('Bitterness', valRate(bitterness, 5)),
+              tL('Body', valRate(body, 5)),
               lineHeight),
         ),
         Positioned(
           right: 0,
-          top: top ?? 23,
+          top: top ?? 18,
           child: rate(
               CrossAxisAlignment.end,
-              tR('ACIDITY', valRate(acidity, 5)),
-              tR('ROASTING', valRate(roasting, 5)),
+              tR('Acidity', valRate(acidity, 5)),
+              tR('Roasting', valRate(roasting, 5)),
               lineHeight),
         ),
         Positioned(
@@ -64,7 +65,7 @@ Widget tR(String text, List<Widget> value) {
       Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
-          CustomText(text: text, fontSize: ScreenUtil().setSp(12)),
+          CustomTitle(title: text, fontSize: ScreenUtil().setSp(13)),
           Row(children: value)
         ],
       ),
@@ -78,7 +79,7 @@ Widget tL(String text, List<Widget> value) {
       Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          CustomText(text: text, fontSize: ScreenUtil().setSp(12)),
+          CustomTitle(title: text, fontSize: ScreenUtil().setSp(13)),
           Row(children: value)
         ],
       ),
@@ -128,9 +129,9 @@ Widget drawIntensity(int intensity, {double sizeText}) {
   return Center(
     child: Row(
       children: <Widget>[
-        CustomText(
-            text: 'INTENSITY', fontSize: sizeText ?? ScreenUtil().setSp(12)),
-        Expanded(child: Text('')),
+        CustomTitle(
+            title: 'Intensity', fontSize: sizeText ?? ScreenUtil().setSp(13)),
+        Spacer(),
         Row(
           children: valRate(
             intensity,
@@ -151,10 +152,10 @@ Widget aromaticNotes(String notes, {double sizeText}) {
   return Center(
     child: Row(
       children: <Widget>[
-        CustomText(
-            text: 'AROMATIC NOTES',
-            fontSize: sizeText ?? ScreenUtil().setSp(12)),
-        Expanded(child: Text('')),
+        CustomTitle(
+            title: 'Aromatic Notes',
+            fontSize: sizeText ?? ScreenUtil().setSp(13)),
+        Spacer(),
         CustomText(
             text: notes,
             fontSize: ScreenUtil().setSp(12),
@@ -168,10 +169,10 @@ Widget aromaticProfile(String profile, {double sizeText}) {
   return Center(
     child: Row(
       children: <Widget>[
-        CustomText(
-            text: 'AROMATIC PROFILE',
-            fontSize: sizeText ?? ScreenUtil().setSp(12)),
-        Expanded(child: Text('')),
+        CustomTitle(
+            title: 'Aromatic Profile',
+            fontSize: sizeText ?? ScreenUtil().setSp(13)),
+        Spacer(),
         CustomText(
             text: profile.toString(),
             fontSize: ScreenUtil().setSp(12),

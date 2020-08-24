@@ -3,13 +3,20 @@ import 'package:flutter/cupertino.dart';
 
 class CartProv with ChangeNotifier {
   Map<String, CartModel> _items = {
-    '10': CartModel(
-      id: '11',
-      title: 'India',
-      quantity: 1,
-      price: 88.2,
-      image: './assets/images/01.png',
-    ),
+    // '10': CartModel(
+    //   id: '11',
+    //   title: 'India',
+    //   quantity: 1,
+    //   price: 88.2,
+    //   image: './assets/images/01.png',
+    // ),
+    // '11': CartModel(
+    //   id: '11',
+    //   title: 'India',
+    //   quantity: 1,
+    //   price: 88.2,
+    //   image: './assets/images/01.png',
+    // ),
   };
 
   Map<String, CartModel> get items {

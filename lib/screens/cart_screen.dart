@@ -54,21 +54,16 @@ class CartScreen extends StatelessWidget {
                           text: '\$ ${cart.totalAmount}',
                           textAlign: TextAlign.center,
                           fontSize: ScreenUtil().setSp(18),
+                          color: Colors.red,
                         ),
                       ),
                     ],
                   ),
                   Spacer(),
-                  MaterialButton(
-                    padding: EdgeInsets.all(0),
-                    height: 34,
-                    child: CustomText(text: 'Order Now', color: Colors.black),
-                    color: Colors.amber,
+                  FlatButton(
+                    child: CustomText(text: 'Order Now', color: Colors.white),
+                    color: Colors.red,
                     onPressed: () {
-                      // Provider.of<Orders>(context, listen: false).addOrder(
-                      //   cart.items.values.toList(),
-                      //   cart.totalAmount,
-                      // );
                       cart.clear();
                     },
                   ),
@@ -101,49 +96,52 @@ class CartWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Dismissible(
-      direction: DismissDirection.endToStart,
-      key: ValueKey(id),
-      background: Container(
-        color: Theme.of(context).errorColor,
-        alignment: Alignment.centerRight,
-        padding: const EdgeInsets.only(right: 20.0),
-        margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 4),
-        child: const Icon(
-          Icons.delete,
-          size: 30.0,
-          color: Colors.white,
-        ),
-      ),
-      onDismissed: (direction) {
-        Provider.of<CartProv>(context, listen: false).removeItem(productId);
-      },
-      confirmDismiss: (direction) {
-        return showDialog(
-          context: context,
-          builder: (ctx) => AlertDialog(
-            title: Text('Are you sure'),
-            content: Text('Do you want to remoe this item from the cart'),
-            actions: <Widget>[
-              FlatButton(
-                child: Text('Yes'),
-                onPressed: () => Navigator.pop(ctx, true),
-              ),
-              FlatButton(
-                child: Text('No'),
-                onPressed: () => Navigator.pop(ctx, false),
-              ),
-            ],
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8.0),
+      child: Dismissible(
+        direction: DismissDirection.endToStart,
+        key: ValueKey(id),
+        background: Container(
+          color: Colors.red,
+          alignment: Alignment.centerRight,
+          padding: const EdgeInsets.only(right: 20.0),
+          margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+          child: const Icon(
+            Icons.delete,
+            size: 30.0,
+            color: Colors.white,
           ),
-        );
-      },
-      child: _priceAndQuantity(),
+        ),
+        onDismissed: (direction) {
+          Provider.of<CartProv>(context, listen: false).removeItem(productId);
+        },
+        confirmDismiss: (direction) {
+          return showDialog(
+            context: context,
+            builder: (ctx) => AlertDialog(
+              title: CustomTitle(title: 'Are you sure'),
+              content: CustomText(
+                  text: 'Do you want to remoe this item from the cart'),
+              actions: <Widget>[
+                FlatButton(
+                  child: CustomText(text: 'Yes'),
+                  onPressed: () => Navigator.pop(ctx, true),
+                ),
+                FlatButton(
+                  child: CustomText(text: 'No'),
+                  onPressed: () => Navigator.pop(ctx, false),
+                ),
+              ],
+            ),
+          );
+        },
+        child: _priceAndQuantity(),
+      ),
     );
   }
 
   Container _priceAndQuantity() {
     return Container(
-        margin: EdgeInsets.only(bottom: 15),
         decoration: decorationBox,
         padding: EdgeInsets.all(15),
         child: Row(

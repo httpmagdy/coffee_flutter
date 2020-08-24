@@ -79,12 +79,7 @@ class _HomeScreenState extends State<HomeScreen>
                   height: _heightTop,
                   decoration: BoxDecoration(
                     color: Colors.grey.withOpacity(0.2),
-                    borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(25.0),
-                      bottomLeft: Radius.circular(25.0),
-                      topRight: Radius.circular(25.0),
-                      topLeft: Radius.circular(25.0),
-                    ),
+                    borderRadius: BorderRadius.all(Radius.circular(25.0)),
                   ),
                   child: TextField(
                     decoration: InputDecoration(
