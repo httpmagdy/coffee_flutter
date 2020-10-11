@@ -1,6 +1,6 @@
 # coffeeflutter
 
-A new Flutter application.
+Coffee shop Flutter application.
 
 ## Screenshots
 
